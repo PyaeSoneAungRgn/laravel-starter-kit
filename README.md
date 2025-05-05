@@ -128,5 +128,11 @@ Automated workflows for continuous integration, running Laravel Pint and PHPStan
 ## Installation
 
 ```bash
-laravel new --using pyaesoneaung/laravel-starter-kit my-app
+laravel new --using pyaesoneaung/laravel-starter-kit --git
+```
+
+Setup Git Hooks
+
+```bash
+npm install
 ```
