@@ -1,0 +1,29 @@
+name: Duster Lint
+
+on:
+    push:
+        branches: [ main ]
+    pull_request:
+
+jobs:
+  duster:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+          tools: composer:v2
+          coverage: xdebug
+      
+      - name: Install Dependencies
+        run: composer install
+
+      - name: "Duster Lint"
+        run: ./vendor/bin/duster lint --using=phpstan,rector,pint
