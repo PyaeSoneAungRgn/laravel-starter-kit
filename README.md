@@ -4,6 +4,18 @@
 
 Laravel 12 starter kit with built-in strict typing, enhanced code quality tools, and safety features.
 
+## Installation
+
+```bash
+laravel new --using pyaesoneaung/laravel-starter-kit --git
+```
+
+Setup Git Hooks
+
+```bash
+npm install
+```
+
 ## Features
 
 ### ✅ Strict Models
@@ -124,15 +136,3 @@ Run duster lint for PHPStan, duster fix for refactor with Rector, and format wit
 ### 😺 GitHub Actions
 
 Automated workflows for continuous integration, running Laravel Pint and PHPStan on every push and pull request.
-
-## Installation
-
-```bash
-laravel new --using pyaesoneaung/laravel-starter-kit --git
-```
-
-Setup Git Hooks
-
-```bash
-npm install
-```
