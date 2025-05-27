@@ -1,5 +1,3 @@
-<a href="https://herd.laravel.com/new?starter-kit=pyaesoneaung/laravel-starter-kit"><img src="https://img.shields.io/badge/Install%20with%20Herd-f55247?logo=laravel&logoColor=white"></a>
-
 # Laravel Starter Kit
 
 Laravel 12 starter kit with built-in strict typing, enhanced code quality tools, and safety features.
